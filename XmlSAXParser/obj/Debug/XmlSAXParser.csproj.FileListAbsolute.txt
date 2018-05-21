@@ -1,0 +1,6 @@
+D:\Универ\ООП(ч.1)\lab6\XmlSAXParser\XmlSAXParser\bin\Debug\XmlSAXParser.exe.config
+D:\Универ\ООП(ч.1)\lab6\XmlSAXParser\XmlSAXParser\bin\Debug\XmlSAXParser.exe
+D:\Универ\ООП(ч.1)\lab6\XmlSAXParser\XmlSAXParser\bin\Debug\XmlSAXParser.pdb
+D:\Универ\ООП(ч.1)\lab6\XmlSAXParser\XmlSAXParser\obj\Debug\XmlSAXParser.csprojResolveAssemblyReference.cache
+D:\Универ\ООП(ч.1)\lab6\XmlSAXParser\XmlSAXParser\obj\Debug\XmlSAXParser.exe
+D:\Универ\ООП(ч.1)\lab6\XmlSAXParser\XmlSAXParser\obj\Debug\XmlSAXParser.pdb
