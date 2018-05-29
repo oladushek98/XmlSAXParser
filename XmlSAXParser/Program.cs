@@ -41,16 +41,9 @@ namespace XmlSAXParser
                         if (reader.NodeType == XmlNodeType.EndElement)
                             if (reader.LocalName == "user")
                             {                            
-                                if (countSkills > num)
-                                {
-                                    toCountSkills = true;
-                                }
-                                else
-                                {
-                                    toCountSkills = false;
-                                }
+                                toCountSkills = (countSkills > num);
                                 countSkills = 0;
-                                if (toCountEmail == true && toCountSkills == true)
+                                if (toCountEmail && toCountSkills)
                                 {
                                     countPeople++;
                                 }
@@ -63,27 +56,13 @@ namespace XmlSAXParser
                             {
                                 countSkills++;
                             }                           
-                            if (reader.LocalName == "email")
-                            {
-                                inEmail = true;
-                            }
-                            else
-                            {
-                                inEmail = false;
-                            }
+                            inEmail = (reader.LocalName == "email");
                         }
 
-                        if (reader.NodeType == XmlNodeType.Text && inEmail == true)
+                        if (reader.NodeType == XmlNodeType.Text && inEmail)
                         {                                
                             string email = reader.Value;
-                            if (email.EndsWith(".biz"))
-                            {
-                                toCountEmail = true;
-                            }
-                            else
-                            {
-                                toCountEmail = false;
-                            }
+                            toCountEmail = (email.EndsWith(".biz"));
                         }                       
                     }   
                 }
